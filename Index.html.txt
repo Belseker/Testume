@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Crear sala Testume</h1>
+    <input id="name" placeholder="Tu nombre o apodo:" /><br><br>
+    <input id="baremo" placeholder="Tu baremo (0-100):" type="number" /><br><br>
+    <label for="testType">Tipo de test:</label>
+    <select id="testType">
+      <option value="20">20 preguntas</option>
+      <option value="30">30 preguntas</option>
+      <option value="100">100 preguntas</option>
+    </select><br><br>
+    <input id="optionsCount" placeholder="Opciones (ej: 4 para A-D):" type="number" /><br><br>
+    <button onclick="startTest()">Unirse al test</button>
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
